@@ -1,0 +1,129 @@
+allocate_manager_keys function    127 ./src/cnf_key.c  void allocate_manager_keys(VtreeManager* manager) {
+allocate_vtree_keys function    103 ./src/cnf_key.c  void allocate_vtree_keys(DVtree* vtree, VtreeManager* manager) {
+bits2bytes       function     98 ./src/cnf_key.c  static c2dSize bits2bytes(c2dSize n) { 
+c2d_version      function    169 ./src/getopt.c   const char* c2d_version() {
+c2d_version      prototype    12 ./src/getopt.c   const char* c2d_version();
+clist_size       function    196 ./src/cache.c    void clist_size(VtreeCache* cache, c2dSize* max, double* ave, double* ave_key, double* max_key, double* min_key) {
+compile_dispatcher function    200 ./src/compile.c  void compile_dispatcher(NNF_NODE *node, Clause **learned_clause, DVtree *vtree,
+compile_dispatcher prototype    15 ./src/compile.c  void compile_dispatcher(NNF_NODE *node, Clause **learned_clause, DVtree *vtree,
+compile_vtree    function     47 ./src/compile.c  NnfManager *compile_vtree(VtreeManager *manager, SatState *sat_state) {
+compile_vtree    prototype    12 ./src/main.c     NnfManager* compile_vtree(VtreeManager* manager, SatState* sat_state);
+compile_vtree_decomposed function     98 ./src/compile.c  void compile_vtree_decomposed(NNF_NODE *node, Clause **learned_clause,
+compile_vtree_leaf function     87 ./src/compile.c  void compile_vtree_leaf(NNF_NODE *node, Clause **learned_clause, DVtree *vtree,
+compile_vtree_shannon function    155 ./src/compile.c  void compile_vtree_shannon(NNF_NODE *node, Clause **learned_clause,
+compile_vtree_shannon prototype   126 ./src/compile.c  void compile_vtree_shannon(NNF_NODE *node, Clause **learned_clause,
+compile_with_literal function    131 ./src/compile.c  compile_with_literal(NNF_NODE *node, Clause **learned_clause, Lit *literal,
+construct_vtree_cache function     38 ./src/cache.c    VtreeCache* construct_vtree_cache(c2dSize capacity) {
+construct_vtree_key function     58 ./src/cnf_key.c  void construct_vtree_key(DVtree* vtree) {
+construct_vtree_key prototype    10 ./src/cache.c    void construct_vtree_key(DVtree* vtree);
+copy_key         function    251 ./src/cache.c    void copy_key(register BYTE* key, register BYTE* cells, register c2dSize count) {
+copy_key         prototype    16 ./src/cache.c    void copy_key(register BYTE* key1, register BYTE* key2, register c2dSize size);
+count_dispatcher function    155 ./src/count.c    void count_dispatcher(c2dWmc* count, Clause** learned_clause, DVtree* vtree, VtreeManager* vtree_manager, SatState* sat_state) {
+count_dispatcher prototype    15 ./src/count.c    void count_dispatcher(c2dWmc* count, Clause** learned_clause, DVtree* vtree, VtreeManager* manager, SatState* sat_state);
+count_vtree      function     37 ./src/count.c    c2dWmc count_vtree(VtreeManager* manager, SatState* sat_state) {
+count_vtree      prototype    14 ./src/main.c     c2dWmc count_vtree(VtreeManager* manager, SatState* sat_state);
+count_vtree_decomposed function     79 ./src/count.c    void count_vtree_decomposed(c2dWmc* count, Clause** learned_clause, DVtree* vtree, VtreeManager* vtree_manager, SatState* sat_state) {
+count_vtree_leaf function     69 ./src/count.c    void count_vtree_leaf(c2dWmc* count, Clause** learned_clause, DVtree* vtree) {
+count_vtree_shannon function    126 ./src/count.c    void count_vtree_shannon(c2dWmc* count, Clause** learned_clause, DVtree* vtree, VtreeManager* vtree_manager, SatState* sat_state) {
+count_vtree_shannon prototype   107 ./src/count.c    void count_vtree_shannon(c2dWmc* count, Clause** learned_clause, DVtree* vtree, VtreeManager* vtree_manager, SatState* sat_state);
+count_with_literal function    110 ./src/count.c    BOOLEAN count_with_literal(c2dWmc* count, Clause** learned_clause, Lit* literal, DVtree* vtree, VtreeManager* vtree_manager, SatState* sat_state) {
+drop_cache_entry function    163 ./src/cache.c    void drop_cache_entry(VtreeCE* entry, VtreeCache* cache) {
+drop_vtree_cache_entries function    175 ./src/cache.c    void drop_vtree_cache_entries(DVtree* vtree, VtreeManager* manager) {
+drop_vtree_cache_entries prototype    12 ./src/compile.c  void drop_vtree_cache_entries(DVtree *vtree, VtreeManager *manager);
+drop_vtree_cache_entries prototype    12 ./src/count.c    void drop_vtree_cache_entries(DVtree* vtree, VtreeManager* manager);
+extended_file_name function     25 ./src/utilities.c char* extended_file_name(const char* fname, const char* new_extension) {
+extended_file_name prototype    19 ./src/main.c     char* extended_file_name(const char* fname, const char* new_extension);
+free_cache_entry function     50 ./src/cache.c    void free_cache_entry(VtreeCE* entry) {
+free_manager_keys function    131 ./src/cnf_key.c  void free_manager_keys(VtreeManager* manager) {
+free_vtree_cache function     55 ./src/cache.c    void free_vtree_cache(VtreeCache* cache) {
+free_vtree_keys  function    119 ./src/cnf_key.c  void free_vtree_keys(DVtree* vtree) {
+get_options      function     55 ./src/getopt.c   c2dOptions* get_options(int argc, char** argv) {
+get_options      prototype    10 ./src/main.c     c2dOptions* get_options(int argc, char** argv);
+init_options     function     34 ./src/getopt.c   c2dOptions* init_options() {
+insert_cache     function    124 ./src/cache.c    void insert_cache(VtreeCV item, DVtree* vtree, VtreeManager* manager) { 
+insert_cache     prototype    11 ./src/compile.c  void insert_cache(VtreeCV item, DVtree *vtree, VtreeManager *manager);
+insert_cache     prototype    11 ./src/count.c    void insert_cache(VtreeCV item, DVtree* vtree, VtreeManager* manager);
+lookup_cache     function     86 ./src/cache.c    BOOLEAN lookup_cache(VtreeCV* result, DVtree* vtree, VtreeManager* manager) {
+lookup_cache     prototype    10 ./src/compile.c  BOOLEAN lookup_cache(VtreeCV *item, DVtree *vtree, VtreeManager *manager);
+lookup_cache     prototype    10 ./src/count.c    BOOLEAN lookup_cache(VtreeCV* item, DVtree* vtree, VtreeManager* manager);
+main             function     26 ./src/main.c     int main(int argc, char* argv[]) {
+match_keys       function    246 ./src/cache.c    BOOLEAN match_keys(register BYTE* key1, register BYTE* key2, register c2dSize count) {
+match_keys       prototype    15 ./src/cache.c    BOOLEAN match_keys(register BYTE* key1, register BYTE* key2, register c2dSize size);
+nnf_conjoin      prototype    42 ./include/nnf_api.h NNF_NODE nnf_conjoin(NNF_NODE node1, NNF_NODE node2, NnfManager* manager);
+nnf_count_models prototype    97 ./include/nnf_api.h char* nnf_count_models(c2dSize var_count, const Nnf* nnf);
+nnf_count_nodes  prototype    53 ./include/nnf_api.h void nnf_count_nodes(NNF_NODE node, c2dSize* node_count, c2dSize* edge_count);
+nnf_decomposable prototype   104 ./include/nnf_api.h BOOLEAN nnf_decomposable(const Nnf* nnf);
+nnf_disjoin      prototype    50 ./include/nnf_api.h NNF_NODE nnf_disjoin(const Var* var, NNF_NODE node1, NNF_NODE node2, NnfManager* manager);
+nnf_edge_count   prototype    93 ./include/nnf_api.h c2dSize nnf_edge_count(const Nnf* nnf);
+nnf_entails_cnf  prototype   100 ./include/nnf_api.h BOOLEAN nnf_entails_cnf(const Nnf* nnf, const SatState* sat_state);
+nnf_free         prototype    87 ./include/nnf_api.h c2dSize nnf_free(Nnf* nnf);
+nnf_literal2node prototype    39 ./include/nnf_api.h NNF_NODE nnf_literal2node(const Lit* lit, const NnfManager* manager);
+nnf_load_from_file prototype    81 ./include/nnf_api.h Nnf* nnf_load_from_file(const char* fname);
+nnf_manager_extract_nnf prototype    66 ./include/nnf_api.h Nnf* nnf_manager_extract_nnf(NnfManager* manager);
+nnf_manager_free prototype    33 ./include/nnf_api.h void nnf_manager_free(NnfManager* manager);
+nnf_manager_get_root prototype    60 ./include/nnf_api.h NNF_NODE nnf_manager_get_root(const NnfManager* manager);
+nnf_manager_memory prototype    36 ./include/nnf_api.h c2dSize nnf_manager_memory(const NnfManager* manager);
+nnf_manager_new  prototype    30 ./include/nnf_api.h NnfManager* nnf_manager_new(c2dSize var_count, c2dSize capacity);
+nnf_manager_save_to_file prototype    70 ./include/nnf_api.h void nnf_manager_save_to_file(const char* fname, NnfManager* manager, c2dSize* node_count, c2dSize* edge_count);
+nnf_manager_set_root prototype    56 ./include/nnf_api.h void nnf_manager_set_root(NNF_NODE node, NnfManager* manager);
+nnf_node_count   prototype    90 ./include/nnf_api.h c2dSize nnf_node_count(const Nnf* nnf);
+nnf_save_as_dot  prototype    84 ./include/nnf_api.h void nnf_save_as_dot(const char* fname, const Nnf* nnf);
+nnf_save_to_file prototype    78 ./include/nnf_api.h void nnf_save_to_file(const char* fname, const Nnf* nnf);
+pprint_bytes     function     18 ./src/utilities.c void pprint_bytes(const char* string, c2dSize bytes) {
+pprint_bytes     prototype    12 ./src/cache.c    void pprint_bytes(const char* string, c2dSize bytes);
+pprint_bytes     prototype    18 ./src/main.c     void pprint_bytes(const char* string, c2dSize bytes);
+print_error_and_exit function    125 ./src/getopt.c   void print_error_and_exit(const char* message, const char* PACKAGE, int exit_value) {
+print_error_and_exit prototype    10 ./src/getopt.c   void print_error_and_exit(const char* message, const char* PACKAGE, int exit_value);
+print_help       function    131 ./src/getopt.c   void print_help(const char* PACKAGE, int exit_value) {
+print_help       prototype    11 ./src/getopt.c   void print_help(const char* PACKAGE, int exit_value);
+print_vtree_cache_stats function    226 ./src/cache.c    void print_vtree_cache_stats(VtreeCache* cache) {
+print_vtree_cache_stats prototype    16 ./src/main.c     void print_vtree_cache_stats(VtreeCache* vtree_cache);
+sat_assert_clause prototype   177 ./include/sat_api.h Clause* sat_assert_clause(Clause* clause, SatState* sat_state);
+sat_assert_unit_clauses prototype   208 ./include/sat_api.h BOOLEAN sat_assert_unit_clauses(SatState* sat_state);
+sat_at_assertion_level prototype   219 ./include/sat_api.h BOOLEAN sat_at_assertion_level(const Clause* clause, const SatState* sat_state);
+sat_clause2index prototype   154 ./include/sat_api.h c2dSize sat_clause2index(const Clause* clause);
+sat_clause2literals prototype   157 ./include/sat_api.h Lit** sat_clause2literals(const Clause* clause);
+sat_clause_count prototype   166 ./include/sat_api.h c2dSize sat_clause_count(const SatState* sat_state);
+sat_clause_of_var prototype   101 ./include/sat_api.h Clause* sat_clause_of_var(c2dSize i, const Var* var);
+sat_clause_size  prototype   160 ./include/sat_api.h c2dSize sat_clause_size(const Clause* clause);
+sat_decide_literal prototype   140 ./include/sat_api.h Clause* sat_decide_literal(Lit* lit, SatState* sat_state);
+sat_index2clause prototype   151 ./include/sat_api.h Clause* sat_index2clause(c2dSize index, const SatState* sat_state);
+sat_index2literal prototype   118 ./include/sat_api.h Lit* sat_index2literal(c2dLiteral index, const SatState* sat_state);
+sat_index2var    prototype    77 ./include/sat_api.h Var* sat_index2var(c2dSize index, const SatState* sat_state);
+sat_is_implied_literal prototype   131 ./include/sat_api.h BOOLEAN sat_is_implied_literal(const Lit* lit);
+sat_is_instantiated_var prototype    87 ./include/sat_api.h BOOLEAN sat_is_instantiated_var(const Var* var);
+sat_is_irrelevant_var prototype    90 ./include/sat_api.h BOOLEAN sat_is_irrelevant_var(const Var* var);
+sat_is_marked_clause prototype   181 ./include/sat_api.h BOOLEAN sat_is_marked_clause(const Clause* clause);
+sat_is_marked_var prototype   105 ./include/sat_api.h BOOLEAN sat_is_marked_var(const Var* var);
+sat_is_subsumed_clause prototype   163 ./include/sat_api.h BOOLEAN sat_is_subsumed_clause(const Clause* clause);
+sat_learned_clause_count prototype   169 ./include/sat_api.h c2dSize sat_learned_clause_count(const SatState* sat_state);
+sat_literal2index prototype   121 ./include/sat_api.h c2dLiteral sat_literal2index(const Lit* lit);
+sat_literal2var  prototype    83 ./include/sat_api.h Var* sat_literal2var(const Lit* lit);
+sat_literal_weight prototype   135 ./include/sat_api.h c2dWmc sat_literal_weight(const Lit* lit);
+sat_mark_clause  prototype   184 ./include/sat_api.h void sat_mark_clause(Clause* clause);
+sat_mark_var     prototype   108 ./include/sat_api.h void sat_mark_var(Var* var);
+sat_state_free   prototype   198 ./include/sat_api.h void sat_state_free(SatState* sat_state);
+sat_state_new    prototype   195 ./include/sat_api.h SatState* sat_state_new(const char* file_name);
+sat_undo_assert_unit_clauses prototype   212 ./include/sat_api.h void sat_undo_assert_unit_clauses(SatState* sat_state);
+sat_undo_decide_literal prototype   144 ./include/sat_api.h void sat_undo_decide_literal(SatState* sat_state);
+sat_unmark_clause prototype   187 ./include/sat_api.h void sat_unmark_clause(Clause* clause);
+sat_unmark_var   prototype   111 ./include/sat_api.h void sat_unmark_var(Var* var);
+sat_var2index    prototype    80 ./include/sat_api.h c2dSize sat_var2index(const Var* var);
+sat_var2nliteral prototype   127 ./include/sat_api.h Lit* sat_var2nliteral(const Var* var);
+sat_var2pliteral prototype   124 ./include/sat_api.h Lit* sat_var2pliteral(const Var* var);
+sat_var_count    prototype    93 ./include/sat_api.h c2dSize sat_var_count(const SatState* sat_state);
+sat_var_occurences prototype    97 ./include/sat_api.h c2dSize sat_var_occurences(const Var* var);
+set_vtree_hashcode function     31 ./src/cnf_key.c  void set_vtree_hashcode(DVtree* vtree) {
+should_cache     function     74 ./src/cache.c    static BOOLEAN should_cache(const DVtree* vtree) {
+var2count        function     61 ./src/count.c    c2dWmc var2count(Var* var) {
+var2nnf          function     76 ./src/compile.c  NNF_NODE var2nnf(Var *var, NnfManager *nnf_manager) {
+vtree_is_leaf    prototype    53 ./include/vtree_api.h BOOLEAN vtree_is_leaf(const DVtree* vtree);
+vtree_is_shannon_node prototype    56 ./include/vtree_api.h BOOLEAN vtree_is_shannon_node(const DVtree* vtree);
+vtree_manager_free prototype    41 ./include/vtree_api.h void vtree_manager_free(VtreeManager* manager);
+vtree_manager_new prototype    38 ./include/vtree_api.h VtreeManager* vtree_manager_new(const SatState* sat_state, const c2dOptions* options);
+vtree_print_widths prototype    50 ./include/vtree_api.h void vtree_print_widths(const DVtree* vtree);
+vtree_save       prototype    44 ./include/vtree_api.h void vtree_save(const char* fname, const DVtree* vtree);
+vtree_save_as_dot prototype    47 ./include/vtree_api.h void vtree_save_as_dot(const char* fname, const DVtree* vtree);
+vtree_shannon_var prototype    59 ./include/vtree_api.h Var* vtree_shannon_var(const DVtree* vtree);
+vtree_type       function     36 ./src/utilities.c const char* vtree_type(const c2dOptions* options) {
+vtree_type       prototype    20 ./src/main.c     const char* vtree_type(const c2dOptions* options);

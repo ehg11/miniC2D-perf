@@ -1,0 +1,5 @@
+stdouts_old
+bin/**/miniC2D
+perf.data
+perf.data.old
+*.o
