@@ -137,6 +137,7 @@ def get_function_percents(perf_filename: str):
                             fn_pcts[current_fn] += pct
                         break
     total_fn_pcts = sum(fn_pcts.values())
+    log(f"Total function percents: {total_fn_pcts}")
     if total_fn_pcts > 100:
         for fn, pct in fn_pcts.items():
             norm_pct = pct / total_fn_pcts * 100
