@@ -4,6 +4,8 @@
 CNF_OUT_DIR="${2:-./stdouts/}"
 PERF_RESULTS_DIR="${3:-./perf_results/}"
 
+mkdir -p ${CNF_OUT_DIR} ${PERF_RESULTS_DIR}
+
 if [ -z "$1" ]; then
     echo "Usage: $0 <CNF filename> [CNF log directory] [perf log directory]"
     exit 1
