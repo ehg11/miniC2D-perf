@@ -15,8 +15,16 @@ CNF="$1"
 BASENAME=$(basename "$CNF")
 BIN="./bin/linux/miniC2D"
 
-echo "===================Running $CNF===================="
 
 # Run the perf command and store logs in the respective directories
-perf record --call-graph dwarf,8192 -F 1000 --aio=2 ${BIN} --vtree_method 4 --cnf ${CNF} 1> ${CNF_OUT_DIR}${BASENAME}.log
-perf report --call-graph=folded,0.01 --stdio | c++filt > ${PERF_RESULTS_DIR}${BASENAME}-perf.log
+echo "[$(date)]===================Running $CNF===================="
+perf record \
+    --call-graph dwarf,16384 \
+    --user-callchains \
+    ${BIN} --vtree_method 4 --cnf ${CNF} 1> ${CNF_OUT_DIR}${BASENAME}.log
+# perf record --call-graph fp ${BIN} --vtree_method 4 --cnf ${CNF} 1> ${CNF_OUT_DIR}${BASENAME}.log
+
+echo "[$(date)]===================Generating $CNF perf log===================="
+perf report -g --call-graph=folded,0.01 --stdio | c++filt > ${PERF_RESULTS_DIR}${BASENAME}-perf.log
+
+echo "[$(date)]====================Done running $CNF====================="
