@@ -1,0 +1,115 @@
+[
+    {
+        "type": "cache",
+        "functions": [
+            "allocate_manager_keys",
+            "allocate_vtree_keys",
+            "bits2bytes",
+            "clist_size",
+            "construct_vtree_cache",
+            "construct_vtree_key",
+            "copy_key",
+            "drop_cache_entry",
+            "drop_vtree_cache_entries",
+            "free_cache_entry",
+            "free_manager_keys",
+            "free_vtree_cache",
+            "free_vtree_keys",
+            "insert_cache",
+            "lookup_cache",
+            "match_keys",
+            "set_vtree_hashcode",
+            "should_cache"
+        ]
+    },
+    {
+        "type": "nnf",
+        "functions": [
+            "nnf_conjoin",
+            "nnf_count_models",
+            "nnf_count_nodes",
+            "nnf_decomposable",
+            "nnf_disjoin",
+            "nnf_edge_count",
+            "nnf_entails_cnf",
+            "nnf_free",
+            "nnf_literal2node",
+            "nnf_load_from_file",
+            "nnf_manager_extract_nnf",
+            "nnf_manager_free",
+            "nnf_manager_get_root",
+            "nnf_manager_memory",
+            "nnf_manager_new",
+            "save_nnf_manager_to_file",
+            "nnf_manager_set_root",
+            "nnf_node_count",
+            "nnf_save_as_dot",
+            "nnf_save_to_file"
+        ]
+    },
+    {
+        "type": "sat",
+        "functions": [
+            "sat_assert_clause",
+            "sat_assert_unit_clauses",
+            "sat_at_assertion_level",
+            "sat_clause2index",
+            "sat_clause2literals",
+            "sat_clause_count",
+            "sat_clause_of_var",
+            "sat_clause_size",
+            "sat_decide_literal",
+            "sat_index2clause",
+            "sat_index2literal",
+            "sat_index2var",
+            "sat_is_implied_literal",
+            "sat_is_instantiated_var",
+            "sat_is_irrelevant_var",
+            "sat_is_marked_clause",
+            "sat_is_marked_var",
+            "sat_is_subsumed_clause",
+            "sat_learned_clause_count",
+            "sat_literal2index",
+            "sat_literal2var",
+            "sat_literal_weight",
+            "sat_mark_clause",
+            "sat_mark_var",
+            "sat_state_free",
+            "sat_state_new",
+            "sat_undo_assert_unit_clauses",
+            "sat_undo_decide_literal",
+            "sat_unmark_clause",
+            "sat_unmark_var",
+            "sat_var2index",
+            "sat_var2nliteral",
+            "sat_var2pliteral",
+            "sat_var_count",
+            "sat_var_occurences"
+        ]
+    },
+    {
+        "type": "vtree",
+        "functions": [
+            "vtree_is_leaf",
+            "vtree_is_shannon_node",
+            "vtree_manager_free",
+            "vtree_manager_new",
+            "vtree_print_widths",
+            "vtree_save",
+            "vtree_save_as_dot",
+            "vtree_shannon_var",
+            "vtree_type"
+        ]
+    },
+    {
+        "type": "compile",
+        "functions": [
+            "compile_dispatcher",
+            "compile_vtree",
+            "compile_vtree_decomposed",
+            "compile_vtree_leaf",
+            "compile_vtree_shannon",
+            "compile_with_literal"
+        ]
+    }
+]
