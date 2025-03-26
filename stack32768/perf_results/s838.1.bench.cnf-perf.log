@@ -1,0 +1,556 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 2
+#
+# Samples: 409  of event 'cycles'
+# Event count (approx.): 238960475
+#
+# Children      Self  Command  Shared Object         Symbol                                                                                                                                                                      
+# ........  ........  .......  ....................  ............................................................................................................................................................................
+#
+    86.82%     0.00%  miniC2D  libc.so.6             [.] __libc_start_main
+16.99% __libc_start_main;0x7fdc9a446249;main;print_vtree_cache_stats;clist_size
+16.87% __libc_start_main;0x7fdc9a446249;main;vtree_manager_free;free_vtree_cache
+2.03% __libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_minus;unmark_vset;sat_unmark_var
+1.81% __libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_intersection;unmark_vset;sat_unmark_var
+1.61% __libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_intersection;mark_vset;sat_mark_var
+1.36% __libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_minus;mark_vset;sat_mark_var
+0.91% __libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;cnf2hdtree;cnf2minfill_order;Graph::removeAndConnect;std::_Rb_tree_increment
+0.67% __libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;pass2;pass2;pass2;classify_clause_vars;vset_minus;mark_vset
+0.67% __libc_start_main;0x7fdc9a446249;main;vtree_manager_free;free_vtree_cache;__libc_free (inlined);__munmap;entry_SYSCALL_64_after_hwframe;do_syscall_64;__x64_sys_munmap;__vm_munmap;do_mas_munmap;do_mas_align_munmap;unmap_region;unmap_vmas;unmap_page_range
+0.66% __libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;pass2;pass2;classify_clause_vars;vset_intersection;unmark_vset;sat_unmark_var
+0.66% __libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;classify_clause_vars;vset_minus;unmark_vset;sat_unmark_var
+    86.82%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a446249
+16.99% 0x7fdc9a446249;main;print_vtree_cache_stats;clist_size
+16.87% 0x7fdc9a446249;main;vtree_manager_free;free_vtree_cache
+2.03% 0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_minus;unmark_vset;sat_unmark_var
+1.81% 0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_intersection;unmark_vset;sat_unmark_var
+1.61% 0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_intersection;mark_vset;sat_mark_var
+1.36% 0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_minus;mark_vset;sat_mark_var
+0.91% 0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;cnf2hdtree;cnf2minfill_order;Graph::removeAndConnect;std::_Rb_tree_increment
+0.67% 0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;pass2;pass2;pass2;classify_clause_vars;vset_minus;mark_vset
+0.67% 0x7fdc9a446249;main;vtree_manager_free;free_vtree_cache;__libc_free (inlined);__munmap;entry_SYSCALL_64_after_hwframe;do_syscall_64;__x64_sys_munmap;__vm_munmap;do_mas_munmap;do_mas_align_munmap;unmap_region;unmap_vmas;unmap_page_range
+0.66% 0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;pass2;pass2;classify_clause_vars;vset_intersection;unmark_vset;sat_unmark_var
+0.66% 0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;classify_clause_vars;vset_minus;unmark_vset;sat_unmark_var
+    86.82%     0.00%  miniC2D  miniC2D               [.] main
+16.99% main;print_vtree_cache_stats;clist_size
+16.87% main;vtree_manager_free;free_vtree_cache
+2.03% main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_minus;unmark_vset;sat_unmark_var
+1.81% main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_intersection;unmark_vset;sat_unmark_var
+1.61% main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_intersection;mark_vset;sat_mark_var
+1.36% main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_minus;mark_vset;sat_mark_var
+0.91% main;vtree_manager_new;cnf2vtree;cnf2hdtree;cnf2minfill_order;Graph::removeAndConnect;std::_Rb_tree_increment
+0.67% main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;pass2;pass2;pass2;classify_clause_vars;vset_minus;mark_vset
+0.67% main;vtree_manager_free;free_vtree_cache;__libc_free (inlined);__munmap;entry_SYSCALL_64_after_hwframe;do_syscall_64;__x64_sys_munmap;__vm_munmap;do_mas_munmap;do_mas_align_munmap;unmap_region;unmap_vmas;unmap_page_range
+0.66% main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;pass2;pass2;classify_clause_vars;vset_intersection;unmark_vset;sat_unmark_var
+0.66% main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;classify_clause_vars;vset_minus;unmark_vset;sat_unmark_var
+    86.56%     0.00%  miniC2D  miniC2D               [.] _start
+16.99% _start;__libc_start_main;0x7fdc9a446249;main;print_vtree_cache_stats;clist_size
+16.87% _start;__libc_start_main;0x7fdc9a446249;main;vtree_manager_free;free_vtree_cache
+2.03% _start;__libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_minus;unmark_vset;sat_unmark_var
+1.81% _start;__libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_intersection;unmark_vset;sat_unmark_var
+1.61% _start;__libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_intersection;mark_vset;sat_mark_var
+1.36% _start;__libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_minus;mark_vset;sat_mark_var
+0.91% _start;__libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;cnf2hdtree;cnf2minfill_order;Graph::removeAndConnect;std::_Rb_tree_increment
+0.67% _start;__libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;pass2;pass2;pass2;classify_clause_vars;vset_minus;mark_vset
+0.67% _start;__libc_start_main;0x7fdc9a446249;main;vtree_manager_free;free_vtree_cache;__libc_free (inlined);__munmap;entry_SYSCALL_64_after_hwframe;do_syscall_64;__x64_sys_munmap;__vm_munmap;do_mas_munmap;do_mas_align_munmap;unmap_region;unmap_vmas;unmap_page_range
+0.66% _start;__libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;pass2;pass2;classify_clause_vars;vset_intersection;unmark_vset;sat_unmark_var
+0.66% _start;__libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;classify_clause_vars;vset_minus;unmark_vset;sat_unmark_var
+    29.86%     0.00%  miniC2D  miniC2D               [.] vtree_manager_new
+2.03% vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_minus;unmark_vset;sat_unmark_var
+1.81% vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_intersection;unmark_vset;sat_unmark_var
+1.61% vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_intersection;mark_vset;sat_mark_var
+1.36% vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_minus;mark_vset;sat_mark_var
+0.91% vtree_manager_new;cnf2vtree;cnf2hdtree;cnf2minfill_order;Graph::removeAndConnect;std::_Rb_tree_increment
+0.67% vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;pass2;pass2;pass2;classify_clause_vars;vset_minus;mark_vset
+0.66% vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;pass2;pass2;classify_clause_vars;vset_intersection;unmark_vset;sat_unmark_var
+0.66% vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;classify_clause_vars;vset_minus;unmark_vset;sat_unmark_var
+    29.65%     0.00%  miniC2D  miniC2D               [.] cnf2vtree
+2.03% cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_minus;unmark_vset;sat_unmark_var
+1.81% cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_intersection;unmark_vset;sat_unmark_var
+1.61% cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_intersection;mark_vset;sat_mark_var
+1.36% cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_minus;mark_vset;sat_mark_var
+0.91% cnf2vtree;cnf2hdtree;cnf2minfill_order;Graph::removeAndConnect;std::_Rb_tree_increment
+0.67% cnf2vtree;p_hdtree2vtree;pass2;pass2;pass2;pass2;pass2;classify_clause_vars;vset_minus;mark_vset
+0.66% cnf2vtree;p_hdtree2vtree;pass2;pass2;pass2;pass2;classify_clause_vars;vset_intersection;unmark_vset;sat_unmark_var
+0.66% cnf2vtree;p_hdtree2vtree;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;classify_clause_vars;vset_minus;unmark_vset;sat_unmark_var
+    24.22%     0.00%  miniC2D  miniC2D               [.] p_hdtree2vtree
+2.03% p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_minus;unmark_vset;sat_unmark_var
+1.81% p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_intersection;unmark_vset;sat_unmark_var
+1.61% p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_intersection;mark_vset;sat_mark_var
+1.36% p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_minus;mark_vset;sat_mark_var
+0.67% p_hdtree2vtree;pass2;pass2;pass2;pass2;pass2;classify_clause_vars;vset_minus;mark_vset
+0.66% p_hdtree2vtree;pass2;pass2;pass2;pass2;classify_clause_vars;vset_intersection;unmark_vset;sat_unmark_var
+0.66% p_hdtree2vtree;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;classify_clause_vars;vset_minus;unmark_vset;sat_unmark_var
+    22.43%     0.00%  miniC2D  miniC2D               [.] pass2
+2.03% pass2;pass2;classify_clause_vars;vset_minus;unmark_vset;sat_unmark_var
+1.81% pass2;pass2;classify_clause_vars;vset_intersection;unmark_vset;sat_unmark_var
+1.61% pass2;pass2;classify_clause_vars;vset_intersection;mark_vset;sat_mark_var
+1.36% pass2;pass2;classify_clause_vars;vset_minus;mark_vset;sat_mark_var
+0.67% pass2;pass2;pass2;pass2;pass2;classify_clause_vars;vset_minus;mark_vset
+0.66% pass2;pass2;pass2;pass2;classify_clause_vars;vset_intersection;unmark_vset;sat_unmark_var
+0.66% pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;classify_clause_vars;vset_minus;unmark_vset;sat_unmark_var
+    20.92%     0.23%  miniC2D  miniC2D               [.] classify_clause_vars
+4.66% classify_clause_vars;vset_minus;unmark_vset;sat_unmark_var
+3.35% classify_clause_vars;vset_intersection;unmark_vset;sat_unmark_var
+3.14% classify_clause_vars;vset_intersection;mark_vset;sat_mark_var
+2.45% classify_clause_vars;vset_minus;mark_vset;sat_mark_var
+1.35% classify_clause_vars;vset_minus;mark_vset
+0.87% classify_clause_vars;vset_union
+0.67% classify_clause_vars;vset_minus;unmark_vset
+    20.73%     0.00%  miniC2D  miniC2D               [.] compile_vtree_shannon
+    20.73%     0.90%  miniC2D  miniC2D               [.] compile_dispatcher
+    20.51%     0.24%  miniC2D  miniC2D               [.] compile_vtree_decomposed
+    17.88%     0.00%  miniC2D  miniC2D               [.] vtree_manager_free
+16.87% vtree_manager_free;free_vtree_cache
+0.67% vtree_manager_free;free_vtree_cache;__libc_free (inlined);__munmap;entry_SYSCALL_64_after_hwframe;do_syscall_64;__x64_sys_munmap;__vm_munmap;do_mas_munmap;do_mas_align_munmap;unmap_region;unmap_vmas;unmap_page_range
+    17.88%    16.87%  miniC2D  miniC2D               [.] free_vtree_cache
+16.87% _start;__libc_start_main;0x7fdc9a446249;main;vtree_manager_free;free_vtree_cache
+0.67% free_vtree_cache;__libc_free (inlined);__munmap;entry_SYSCALL_64_after_hwframe;do_syscall_64;__x64_sys_munmap;__vm_munmap;do_mas_munmap;do_mas_align_munmap;unmap_region;unmap_vmas;unmap_page_range
+    17.84%     0.00%  miniC2D  miniC2D               [.] print_vtree_cache_stats
+16.99% print_vtree_cache_stats;clist_size
+    17.84%    16.73%  miniC2D  miniC2D               [.] clist_size
+16.73% _start;__libc_start_main;0x7fdc9a446249;main;print_vtree_cache_stats;clist_size
+    16.60%     0.00%  miniC2D  miniC2D               [.] compile_vtree
+     9.33%     1.10%  miniC2D  miniC2D               [.] unmark_vset
+8.23% unmark_vset;sat_unmark_var
+     9.13%     0.00%  miniC2D  miniC2D               [.] vset_minus
+4.66% vset_minus;unmark_vset;sat_unmark_var
+2.45% vset_minus;mark_vset;sat_mark_var
+1.35% vset_minus;mark_vset
+0.67% vset_minus;unmark_vset
+     8.28%     2.47%  miniC2D  miniC2D               [.] mark_vset
+5.59% mark_vset;sat_mark_var
+0.67% _start;__libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;pass2;pass2;pass2;classify_clause_vars;vset_minus;mark_vset
+     8.23%     8.23%  miniC2D  miniC2D               [.] sat_unmark_var
+2.03% _start;__libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_minus;unmark_vset;sat_unmark_var
+1.81% _start;__libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_intersection;unmark_vset;sat_unmark_var
+0.66% _start;__libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;pass2;pass2;classify_clause_vars;vset_intersection;unmark_vset;sat_unmark_var
+0.66% _start;__libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;pass2;classify_clause_vars;vset_minus;unmark_vset;sat_unmark_var
+     7.82%     0.22%  miniC2D  miniC2D               [.] vset_intersection
+3.35% vset_intersection;unmark_vset;sat_unmark_var
+3.14% vset_intersection;mark_vset;sat_mark_var
+     6.26%     6.04%  miniC2D  miniC2D               [.] sat_mark_var
+1.61% _start;__libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_intersection;mark_vset;sat_mark_var
+1.36% _start;__libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;p_hdtree2vtree;pass2;pass2;classify_clause_vars;vset_minus;mark_vset;sat_mark_var
+     6.18%     2.61%  miniC2D  miniC2D               [.] get_and_node
+0.66% get_and_node;qsort_r
+0.64% get_and_node;__irqentry_text_end
+     5.18%     0.00%  miniC2D  libc.so.6             [.] __libc_free (inlined)
+0.89% __libc_free (inlined)
+0.67% __libc_free (inlined);__munmap;entry_SYSCALL_64_after_hwframe;do_syscall_64;__x64_sys_munmap;__vm_munmap;do_mas_munmap;do_mas_align_munmap;unmap_region;unmap_vmas;unmap_page_range
+     5.16%     0.00%  miniC2D  [kernel.kallsyms]     [k] asm_exc_page_fault
+0.91% asm_exc_page_fault;exc_page_fault;do_user_addr_fault;handle_mm_fault;__handle_mm_fault;wp_page_copy;vma_alloc_folio;__folio_alloc;__alloc_pages;get_page_from_freelist;clear_page_rep
+0.51% asm_exc_page_fault;exc_page_fault
+     4.73%     0.51%  miniC2D  [kernel.kallsyms]     [k] exc_page_fault
+0.91% exc_page_fault;do_user_addr_fault;handle_mm_fault;__handle_mm_fault;wp_page_copy;vma_alloc_folio;__folio_alloc;__alloc_pages;get_page_from_freelist;clear_page_rep
+     4.38%     2.09%  miniC2D  miniC2D               [.] lookup_cache
+     4.34%     0.00%  miniC2D  miniC2D               [.] cnf2hdtree
+0.91% cnf2hdtree;cnf2minfill_order;Graph::removeAndConnect;std::_Rb_tree_increment
+     4.22%     0.00%  miniC2D  [kernel.kallsyms]     [k] do_user_addr_fault
+0.91% do_user_addr_fault;handle_mm_fault;__handle_mm_fault;wp_page_copy;vma_alloc_folio;__folio_alloc;__alloc_pages;get_page_from_freelist;clear_page_rep
+     3.97%     0.00%  miniC2D  [kernel.kallsyms]     [k] handle_mm_fault
+0.91% handle_mm_fault;__handle_mm_fault;wp_page_copy;vma_alloc_folio;__folio_alloc;__alloc_pages;get_page_from_freelist;clear_page_rep
+     3.82%     0.00%  miniC2D  [kernel.kallsyms]     [k] __handle_mm_fault
+0.91% __handle_mm_fault;wp_page_copy;vma_alloc_folio;__folio_alloc;__alloc_pages;get_page_from_freelist;clear_page_rep
+     3.67%     0.00%  miniC2D  miniC2D               [.] save_nnf_manager_to_file
+     3.37%     0.30%  miniC2D  miniC2D               [.] save_nnf_nodes
+     3.06%     0.00%  miniC2D  libc.so.6             [.] _IO_fprintf (inlined)
+     2.91%     0.00%  miniC2D  [kernel.kallsyms]     [k] entry_SYSCALL_64_after_hwframe
+0.67% entry_SYSCALL_64_after_hwframe;do_syscall_64;__x64_sys_munmap;__vm_munmap;do_mas_munmap;do_mas_align_munmap;unmap_region;unmap_vmas;unmap_page_range
+     2.91%     0.00%  miniC2D  [kernel.kallsyms]     [k] do_syscall_64
+0.67% do_syscall_64;__x64_sys_munmap;__vm_munmap;do_mas_munmap;do_mas_align_munmap;unmap_region;unmap_vmas;unmap_page_range
+     2.82%     0.00%  miniC2D  miniC2D               [.] compile_with_literal (inlined)
+1.61% compile_with_literal (inlined);sat_decide_literal;set_literal
+1.21% compile_with_literal (inlined);erase_level
+     2.72%     0.68%  miniC2D  miniC2D               [.] insert_cache
+     2.51%     0.21%  miniC2D  [kernel.kallsyms]     [k] wp_page_copy
+0.91% wp_page_copy;vma_alloc_folio;__folio_alloc;__alloc_pages;get_page_from_freelist;clear_page_rep
+     2.50%     0.00%  miniC2D  miniC2D               [.] cnf2minfill_order
+0.91% cnf2minfill_order;Graph::removeAndConnect;std::_Rb_tree_increment
+     2.30%     0.66%  miniC2D  libc.so.6             [.] qsort_r
+     2.05%     0.22%  miniC2D  miniC2D               [.] Graph::removeAndConnect
+0.91% Graph::removeAndConnect;std::_Rb_tree_increment
+     1.99%     0.00%  miniC2D  libc.so.6             [.] __libc_calloc
+     1.97%     0.87%  miniC2D  miniC2D               [.] vset_union
+     1.83%     0.00%  miniC2D  miniC2D               [.] order2hdtree
+     1.82%     0.00%  miniC2D  [kernel.kallsyms]     [k] vma_alloc_folio
+1.15% vma_alloc_folio;__folio_alloc;__alloc_pages;get_page_from_freelist;clear_page_rep
+0.67% vma_alloc_folio;__folio_alloc;__alloc_pages;get_page_from_freelist;rmqueue_bulk;__list_del_entry_valid
+     1.82%     0.00%  miniC2D  [kernel.kallsyms]     [k] __folio_alloc
+1.15% __folio_alloc;__alloc_pages;get_page_from_freelist;clear_page_rep
+0.67% __folio_alloc;__alloc_pages;get_page_from_freelist;rmqueue_bulk;__list_del_entry_valid
+     1.82%     0.00%  miniC2D  [kernel.kallsyms]     [k] __alloc_pages
+1.15% __alloc_pages;get_page_from_freelist;clear_page_rep
+0.67% __alloc_pages;get_page_from_freelist;rmqueue_bulk;__list_del_entry_valid
+     1.82%     0.00%  miniC2D  [kernel.kallsyms]     [k] get_page_from_freelist
+1.15% get_page_from_freelist;clear_page_rep
+0.67% get_page_from_freelist;rmqueue_bulk;__list_del_entry_valid
+     1.76%     0.00%  miniC2D  miniC2D               [.] vset_free
+     1.65%     0.49%  miniC2D  miniC2D               [.] get_or_node
+     1.61%     1.61%  miniC2D  miniC2D               [.] set_literal
+     1.61%     0.00%  miniC2D  miniC2D               [.] sat_decide_literal
+1.61% sat_decide_literal;set_literal
+     1.54%     0.22%  miniC2D  miniC2D               [.] vset_new
+     1.35%     1.35%  miniC2D  [kernel.kallsyms]     [k] __irqentry_text_end
+     1.21%     1.21%  miniC2D  miniC2D               [.] erase_level
+     1.15%     1.15%  miniC2D  [kernel.kallsyms]     [k] clear_page_rep
+     1.15%     0.00%  miniC2D  libc.so.6             [.] _IO_do_write
+     1.15%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a49f37f
+     1.15%     0.00%  miniC2D  libc.so.6             [.] _IO_file_write
+     1.15%     0.00%  miniC2D  [kernel.kallsyms]     [k] ksys_write
+     1.13%     1.13%  miniC2D  libstdc++.so.6.0.30   [.] std::_Rb_tree_increment
+0.91% _start;__libc_start_main;0x7fdc9a446249;main;vtree_manager_new;cnf2vtree;cnf2hdtree;cnf2minfill_order;Graph::removeAndConnect;std::_Rb_tree_increment
+     1.12%     0.91%  miniC2D  miniC2D               [.] mark_cset
+     1.11%     0.22%  miniC2D  miniC2D               [.] cset_intersection
+     1.11%     0.00%  miniC2D  miniC2D               [.] pass1b
+     1.11%     1.11%  miniC2D  miniC2D               [.] literal2nnf_node
+     1.10%     0.45%  miniC2D  libc.so.6             [.] malloc
+     1.10%     0.00%  miniC2D  ld-linux-x86-64.so.2  [.] 0x00007fdc9a8cbb27
+     1.10%     0.00%  miniC2D  ld-linux-x86-64.so.2  [.] 0x00007fdc9a8ccc7b
+     1.10%     0.00%  miniC2D  ld-linux-x86-64.so.2  [.] 0x00007fdc9a8cb2fe
+     1.09%     0.42%  miniC2D  miniC2D               [.] construct_vtree_key
+     1.06%     0.00%  miniC2D  [kernel.kallsyms]     [k] asm_sysvec_apic_timer_interrupt
+     1.06%     0.00%  miniC2D  [kernel.kallsyms]     [k] sysvec_apic_timer_interrupt
+     1.01%     0.67%  miniC2D  [kernel.kallsyms]     [k] unmap_page_range
+0.67% _start;__libc_start_main;0x7fdc9a446249;main;vtree_manager_free;free_vtree_cache;__libc_free (inlined);__munmap;entry_SYSCALL_64_after_hwframe;do_syscall_64;__x64_sys_munmap;__vm_munmap;do_mas_munmap;do_mas_align_munmap;unmap_region;unmap_vmas;unmap_page_range
+     1.01%     0.00%  miniC2D  [kernel.kallsyms]     [k] unmap_vmas
+0.67% unmap_vmas;unmap_page_range
+     0.98%     0.00%  miniC2D  libc.so.6             [.] __munmap
+0.67% __munmap;entry_SYSCALL_64_after_hwframe;do_syscall_64;__x64_sys_munmap;__vm_munmap;do_mas_munmap;do_mas_align_munmap;unmap_region;unmap_vmas;unmap_page_range
+     0.98%     0.00%  miniC2D  [kernel.kallsyms]     [k] __x64_sys_munmap
+0.67% __x64_sys_munmap;__vm_munmap;do_mas_munmap;do_mas_align_munmap;unmap_region;unmap_vmas;unmap_page_range
+     0.98%     0.00%  miniC2D  [kernel.kallsyms]     [k] __vm_munmap
+0.67% __vm_munmap;do_mas_munmap;do_mas_align_munmap;unmap_region;unmap_vmas;unmap_page_range
+     0.98%     0.00%  miniC2D  [kernel.kallsyms]     [k] do_mas_munmap
+0.67% do_mas_munmap;do_mas_align_munmap;unmap_region;unmap_vmas;unmap_page_range
+     0.98%     0.00%  miniC2D  [kernel.kallsyms]     [k] do_mas_align_munmap
+0.67% do_mas_align_munmap;unmap_region;unmap_vmas;unmap_page_range
+     0.98%     0.00%  miniC2D  [kernel.kallsyms]     [k] unmap_region
+0.67% unmap_region;unmap_vmas;unmap_page_range
+     0.94%     0.00%  miniC2D  [unknown]             [.] 0xffffffffffffffff
+     0.93%     0.00%  miniC2D  libc.so.6             [.] _IO_file_xsputn
+     0.93%     0.00%  miniC2D  libc.so.6             [.] __write (inlined)
+     0.93%     0.70%  miniC2D  miniC2D               [.] var2nnf
+     0.92%     0.00%  miniC2D  miniC2D               [.] fill_esets
+     0.89%     0.22%  miniC2D  miniC2D               [.] combine_v
+     0.89%     0.89%  miniC2D  libc.so.6             [.] cfree
+     0.84%     0.00%  miniC2D  [kernel.kallsyms]     [k] vfs_write
+     0.84%     0.00%  miniC2D  [ext4]                [k] ext4_buffered_write_iter
+     0.72%     0.00%  miniC2D  miniC2D               [.] sat_read_cnf
+     0.72%     0.00%  miniC2D  libc.so.6             [.] fscanf
+     0.69%     0.00%  miniC2D  miniC2D               [.] eset_new
+     0.68%     0.45%  miniC2D  miniC2D               [.] std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_insert_unique
+     0.68%     0.23%  miniC2D  miniC2D               [.] eset_union
+     0.67%     0.67%  miniC2D  [kernel.kallsyms]     [k] __list_del_entry_valid
+     0.67%     0.00%  miniC2D  [kernel.kallsyms]     [k] rmqueue_bulk
+0.67% rmqueue_bulk;__list_del_entry_valid
+     0.67%     0.00%  miniC2D  miniC2D               [.] p_hdtree2vtree_aux
+     0.67%     0.45%  miniC2D  miniC2D               [.] cset_union
+     0.67%     0.00%  miniC2D  miniC2D               [.] cutset2vtree_rl
+     0.67%     0.45%  miniC2D  [kernel.kallsyms]     [k] __split_huge_pmd
+     0.67%     0.00%  miniC2D  [kernel.kallsyms]     [k] do_huge_pmd_wp_page
+     0.66%     0.22%  miniC2D  miniC2D               [.] vset_clause_new
+     0.62%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a47bf75
+     0.62%     0.00%  miniC2D  [kernel.kallsyms]     [k] generic_perform_write
+     0.61%     0.00%  miniC2D  [kernel.kallsyms]     [k] __irq_exit_rcu
+     0.61%     0.00%  miniC2D  [kernel.kallsyms]     [k] handle_softirqs
+     0.50%     0.00%  miniC2D  ld-linux-x86-64.so.2  [.] 0x00007fdc9a8ced68
+     0.50%     0.00%  miniC2D  ld-linux-x86-64.so.2  [.] 0x00007fdc9a8bf410
+     0.49%     0.49%  miniC2D  miniC2D               [.] vtree_is_shannon_node
+     0.49%     0.49%  miniC2D  miniC2D               [.] sat_is_instantiated_var
+     0.47%     0.47%  miniC2D  libc.so.6             [.] memcpy
+     0.47%     0.47%  miniC2D  [kernel.kallsyms]     [k] error_entry
+     0.46%     0.46%  miniC2D  libc.so.6             [.] 0x000000000003fb5a
+     0.46%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a45eb5a
+     0.46%     0.23%  miniC2D  miniC2D               [.] eset_intersection
+     0.46%     0.46%  miniC2D  libc.so.6             [.] 0x00000000000961e0
+     0.46%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b51e0
+     0.46%     0.24%  miniC2D  miniC2D               [.] std::set_intersection<std::_Rb_tree_const_iterator<int>, std::_Rb_tree_const_iterator<int>, std::insert_iterator<std::set<int, std::less<int>, std::allocator<int> > > >
+     0.46%     0.22%  miniC2D  miniC2D               [.] eset_node_new
+     0.46%     0.00%  miniC2D  miniC2D               [.] Graph::addEdge
+     0.46%     0.00%  miniC2D  miniC2D               [.] balanced_compose_hdtrees
+     0.46%     0.00%  miniC2D  miniC2D               [.] cnf2hgr_primal
+     0.45%     0.00%  miniC2D  [kernel.kallsyms]     [k] __sysvec_apic_timer_interrupt
+     0.45%     0.00%  miniC2D  [kernel.kallsyms]     [k] hrtimer_interrupt
+     0.45%     0.45%  miniC2D  libc.so.6             [.] realloc
+     0.45%     0.45%  miniC2D  libc.so.6             [.] 0x0000000000096178
+     0.45%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b5178
+     0.44%     0.00%  miniC2D  miniC2D               [.] sat_state_new
+     0.44%     0.44%  miniC2D  miniC2D               [.] nnf_node_cmp
+     0.44%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a45eb9c
+     0.44%     0.44%  miniC2D  miniC2D               [.] sat_is_implied_literal
+     0.42%     0.00%  miniC2D  miniC2D               [.] free_hgr
+     0.39%     0.24%  miniC2D  [kernel.kallsyms]     [k] __count_memcg_events
+     0.34%     0.34%  miniC2D  libc.so.6             [.] 0x00000000000952ab
+     0.34%     0.00%  miniC2D  [unknown]             [.] 0x000000000000269f
+     0.34%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b42ab
+     0.33%     0.33%  miniC2D  [kernel.kallsyms]     [k] _compound_head
+     0.33%     0.00%  miniC2D  [kernel.kallsyms]     [k] __x64_sys_exit_group
+     0.33%     0.00%  miniC2D  [kernel.kallsyms]     [k] do_group_exit
+     0.33%     0.00%  miniC2D  [kernel.kallsyms]     [k] do_exit
+     0.33%     0.00%  miniC2D  [kernel.kallsyms]     [k] __mmput
+     0.33%     0.00%  miniC2D  [kernel.kallsyms]     [k] exit_mmap
+     0.33%     0.33%  miniC2D  [kernel.kallsyms]     [k] note_gp_changes
+     0.33%     0.00%  miniC2D  [kernel.kallsyms]     [k] rcu_core
+     0.31%     0.31%  miniC2D  [kernel.kallsyms]     [k] free_unref_page_commit
+     0.31%     0.00%  miniC2D  miniC2D               [.] free_nnf_manager
+     0.31%     0.00%  miniC2D  [kernel.kallsyms]     [k] tlb_finish_mmu
+     0.31%     0.00%  miniC2D  [kernel.kallsyms]     [k] tlb_batch_pages_flush
+     0.31%     0.00%  miniC2D  [kernel.kallsyms]     [k] release_pages
+     0.31%     0.00%  miniC2D  [kernel.kallsyms]     [k] free_unref_page_list
+     0.31%     0.31%  miniC2D  [kernel.kallsyms]     [k] copy_user_generic_string
+     0.31%     0.00%  miniC2D  [kernel.kallsyms]     [k] copy_page_from_iter_atomic
+     0.31%     0.31%  miniC2D  [kernel.kallsyms]     [k] _raw_spin_lock
+     0.31%     0.00%  miniC2D  [ext4]                [k] ext4_da_write_begin
+     0.31%     0.00%  miniC2D  [ext4]                [k] ext4_block_write_begin
+     0.31%     0.00%  miniC2D  [ext4]                [k] ext4_da_get_block_prep
+     0.31%     0.00%  miniC2D  [ext4]                [k] ext4_da_reserve_space
+     0.31%     0.31%  miniC2D  libc.so.6             [.] 0x000000000005c758
+     0.31%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a47b758
+     0.31%     0.31%  miniC2D  [kernel.kallsyms]     [k] __fdget_pos
+     0.31%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a47b50d
+     0.31%     0.31%  miniC2D  libc.so.6             [.] 0x000000000005c662
+     0.31%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a47b662
+     0.31%     0.31%  miniC2D  libc.so.6             [.] 0x000000000005c548
+     0.31%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a47b548
+     0.30%     0.30%  miniC2D  miniC2D               [.] count_nnf_nodes
+     0.30%     0.30%  miniC2D  libc.so.6             [.] 0x000000000005c9b5
+     0.30%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a47b9b5
+     0.30%     0.30%  miniC2D  libc.so.6             [.] 0x000000000005cee7
+     0.30%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a47bee7
+     0.30%     0.30%  miniC2D  libc.so.6             [.] 0x000000000005c477
+     0.30%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a47b477
+     0.30%     0.30%  miniC2D  libc.so.6             [.] 0x000000000005c4fb
+     0.30%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a47b4fb
+     0.28%     0.28%  miniC2D  [kernel.kallsyms]     [k] free_iova_fast
+     0.28%     0.00%  miniC2D  [kernel.kallsyms]     [k] run_timer_softirq
+     0.28%     0.00%  miniC2D  [kernel.kallsyms]     [k] __run_timers
+     0.28%     0.00%  miniC2D  [kernel.kallsyms]     [k] call_timer_fn
+     0.28%     0.00%  miniC2D  [kernel.kallsyms]     [k] fq_flush_timeout
+     0.28%     0.00%  miniC2D  [kernel.kallsyms]     [k] fq_ring_free
+     0.26%     0.26%  miniC2D  [kernel.kallsyms]     [k] native_irq_return_iret
+     0.26%     0.26%  miniC2D  [kernel.kallsyms]     [k] __mod_memcg_lruvec_state
+     0.26%     0.00%  miniC2D  ld-linux-x86-64.so.2  [.] 0x00007fdc9a8cee7e
+     0.26%     0.00%  miniC2D  libc.so.6             [.] __libc_early_init
+     0.26%     0.00%  miniC2D  [kernel.kallsyms]     [k] page_add_new_anon_rmap
+     0.26%     0.00%  miniC2D  [kernel.kallsyms]     [k] __mod_lruvec_page_state
+     0.26%     0.26%  miniC2D  ld-linux-x86-64.so.2  [.] 0x000000000000996c
+     0.26%     0.00%  miniC2D  ld-linux-x86-64.so.2  [.] 0x00007fdc9a8ba96c
+     0.25%     0.25%  miniC2D  libc.so.6             [.] 0x0000000000097945
+     0.25%     0.00%  miniC2D  [heap]                [.] 0x0000000030ecba47
+     0.25%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b6945
+     0.25%     0.25%  miniC2D  [kernel.kallsyms]     [k] mas_destroy
+     0.25%     0.00%  miniC2D  [kernel.kallsyms]     [k] lock_mm_and_find_vma
+     0.25%     0.00%  miniC2D  [kernel.kallsyms]     [k] expand_downwards
+     0.25%     0.00%  miniC2D  [kernel.kallsyms]     [k] mas_store_prealloc
+     0.25%     0.25%  miniC2D  miniC2D               [.] sat_var2pliteral
+     0.25%     0.00%  miniC2D  miniC2D               [.] drop_vtree_cache_entries
+     0.25%     0.00%  miniC2D  miniC2D               [.] drop_cache_entry (inlined)
+     0.25%     0.00%  miniC2D  miniC2D               [.] free_cache_entry (inlined)
+     0.25%     0.25%  miniC2D  libc.so.6             [.] @plt
+     0.25%     0.25%  miniC2D  libc.so.6             [.] 0x000000000005f0db
+     0.25%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a47e0db
+     0.25%     0.00%  miniC2D  anon                  [.] 0x00007fdc83210977
+     0.24%     0.24%  miniC2D  ld-linux-x86-64.so.2  [.] 0x0000000000009016
+     0.24%     0.00%  miniC2D  ld-linux-x86-64.so.2  [.] 0x00007fdc9a8baa47
+     0.24%     0.00%  miniC2D  ld-linux-x86-64.so.2  [.] 0x00007fdc9a8ba016
+     0.24%     0.24%  miniC2D  libc.so.6             [.] 0x000000000003f9f6
+     0.24%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a45e9f6
+     0.24%     0.24%  miniC2D  libc.so.6             [.] 0x000000000005ff37
+     0.24%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a47ef37
+     0.24%     0.24%  miniC2D  libc.so.6             [.] 0x000000000003fab5
+     0.24%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a45eab5
+     0.24%     0.24%  miniC2D  [kernel.kallsyms]     [k] native_flush_tlb_one_user
+     0.24%     0.00%  miniC2D  [kernel.kallsyms]     [k] ptep_clear_flush
+     0.24%     0.00%  miniC2D  [kernel.kallsyms]     [k] flush_tlb_mm_range
+     0.24%     0.00%  miniC2D  [kernel.kallsyms]     [k] flush_tlb_func
+     0.24%     0.00%  miniC2D  [kernel.kallsyms]     [k] __mem_cgroup_charge
+     0.24%     0.00%  miniC2D  [kernel.kallsyms]     [k] charge_memcg
+     0.23%     0.00%  miniC2D  [heap]                [.] 0x0000000030f8b70f
+     0.23%     0.23%  miniC2D  libc.so.6             [.] 0x0000000000096131
+     0.23%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b5131
+     0.23%     0.00%  miniC2D  miniC2D               [.] hgr_new_finish
+     0.23%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4c2700
+     0.23%     0.00%  miniC2D  [heap]                [.] 0x00000000310b781f
+     0.23%     0.23%  miniC2D  libc.so.6             [.] 0x0000000000097cf5
+     0.23%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b6cf5
+     0.23%     0.00%  miniC2D  [heap]                [.] 0x00000000310a992f
+     0.23%     0.00%  miniC2D  [heap]                [.] 0x000000003109d5bf
+     0.23%     0.00%  miniC2D  [heap]                [.] 0x00000000310a367f
+     0.23%     0.00%  miniC2D  miniC2D               [.] Graph::Graph
+     0.23%     0.00%  miniC2D  [heap]                [.] 0x0000000030fafc5f
+     0.23%     0.23%  miniC2D  [kernel.kallsyms]     [k] _raw_spin_lock_irq
+     0.23%     0.00%  miniC2D  [kernel.kallsyms]     [k] __hrtimer_run_queues
+     0.23%     0.23%  miniC2D  libstdc++.so.6.0.30   [.] std::_Rb_tree_insert_and_rebalance
+     0.23%     0.00%  miniC2D  miniC2D               [.] std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_insert_
+     0.23%     0.00%  miniC2D  [heap]                [.] 0x000000003101c1ef
+     0.23%     0.23%  miniC2D  miniC2D               [.] unmark_eset
+     0.23%     0.23%  miniC2D  miniC2D               [.] std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_copy
+     0.23%     0.00%  miniC2D  [stack]               [.] 0x00007fffd5a7ae3f
+     0.23%     0.23%  miniC2D  miniC2D               [.] unmark_cset
+     0.23%     0.23%  miniC2D  libc.so.6             [.] 0x000000000006079c
+     0.23%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a47f79c
+     0.23%     0.23%  miniC2D  miniC2D               [.] Graph::containsEdge
+     0.23%     0.00%  miniC2D  miniC2D               [.] minFillScore
+     0.23%     0.00%  miniC2D  miniC2D               [.] cset_new
+     0.23%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b7109
+     0.23%     0.23%  miniC2D  libc.so.6             [.] 0x0000000000096283
+     0.23%     0.00%  miniC2D  [heap]                [.] 0x0000000030ffbdff
+     0.23%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b5283
+     0.23%     0.23%  miniC2D  libc.so.6             [.] 0x0000000000097b13
+     0.23%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b6b13
+     0.22%     0.00%  miniC2D  [heap]                [.] 0x0000000030fbd1af
+     0.22%     0.00%  miniC2D  [kernel.kallsyms]     [k] __x64_sys_execve
+     0.22%     0.00%  miniC2D  [kernel.kallsyms]     [k] do_execveat_common.isra.0
+     0.22%     0.00%  miniC2D  [kernel.kallsyms]     [k] bprm_execve
+     0.22%     0.00%  miniC2D  [kernel.kallsyms]     [k] load_elf_binary
+     0.22%     0.22%  miniC2D  [kernel.kallsyms]     [k] mas_walk
+     0.22%     0.00%  miniC2D  miniC2D               [.] declare_in_hgr
+     0.22%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b70bd
+     0.22%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b5f98
+     0.22%     0.00%  miniC2D  libc.so.6             [.] __default_morecore
+     0.22%     0.00%  miniC2D  libc.so.6             [.] sbrk (inlined)
+     0.22%     0.00%  miniC2D  libc.so.6             [.] brk
+     0.22%     0.00%  miniC2D  [kernel.kallsyms]     [k] __do_sys_brk
+     0.22%     0.00%  miniC2D  [kernel.kallsyms]     [k] mas_find
+     0.22%     0.22%  miniC2D  miniC2D               [.] Graph::getNeighbors
+     0.22%     0.00%  miniC2D  [unknown]             [.] 0x00000000000000d6
+     0.22%     0.22%  miniC2D  libc.so.6             [.] 0x0000000000096162
+     0.22%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b5162
+     0.22%     0.22%  miniC2D  miniC2D               [.] vtree_shannon_var
+     0.22%     0.22%  miniC2D  libc.so.6             [.] 0x0000000000096188
+     0.22%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b5188
+     0.22%     0.22%  miniC2D  libc.so.6             [.] 0x0000000000097bbf
+     0.22%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b6bbf
+     0.22%     0.00%  miniC2D  miniC2D               [.] construct_cnf_clauses
+     0.22%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4c2707
+     0.22%     0.22%  miniC2D  libc.so.6             [.] 0x000000000009742e
+     0.22%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b642e
+     0.22%     0.22%  miniC2D  libc.so.6             [.] 0x00000000000973b8
+     0.22%     0.00%  miniC2D  miniC2D               [.] initialize_hdtree
+     0.22%     0.00%  miniC2D  miniC2D               [.] fill_edges_etc
+     0.22%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b63b8
+     0.22%     0.22%  miniC2D  miniC2D               [.] std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_insert_unique_
+     0.22%     0.22%  miniC2D  miniC2D               [.] sift_down
+     0.22%     0.00%  miniC2D  [heap]                [.] 0x00000000310266f7
+     0.22%     0.22%  miniC2D  [kernel.kallsyms]     [k] __static_call_text_end
+     0.22%     0.00%  miniC2D  [kernel.kallsyms]     [k] clockevents_program_event
+     0.22%     0.00%  miniC2D  [kernel.kallsyms]     [k] lapic_next_deadline
+     0.22%     0.00%  miniC2D  [heap]                [.] 0x0000000031032eff
+     0.22%     0.00%  miniC2D  [heap]                [.] 0x000000003104937f
+     0.22%     0.00%  miniC2D  [heap]                [.] 0x000000003103f38f
+     0.22%     0.22%  miniC2D  libc.so.6             [.] 0x0000000000097ce0
+     0.22%     0.00%  miniC2D  miniC2D               [.] initialize_sat_state
+     0.22%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b6ce0
+     0.22%     0.00%  miniC2D  [stack]               [.] 0x00007fffd5a7af07
+     0.22%     0.22%  miniC2D  miniC2D               [.] mark_eset
+     0.22%     0.00%  miniC2D  [heap]                [.] 0x0000000030fc9b2f
+     0.22%     0.00%  miniC2D  [heap]                [.] 0x000000003108e5df
+     0.22%     0.00%  miniC2D  [stack]               [.] 0x00007fffd5a7aecf
+     0.22%     0.22%  miniC2D  libc.so.6             [.] 0x000000000009619a
+     0.22%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b519a
+     0.22%     0.22%  miniC2D  [jbd2]                [k] jbd2_journal_dirty_metadata
+     0.22%     0.00%  miniC2D  libc.so.6             [.] fflush (inlined)
+     0.22%     0.00%  miniC2D  libc.so.6             [.] _IO_file_sync
+     0.22%     0.00%  miniC2D  libc.so.6             [.] __write (inlined)
+     0.22%     0.00%  miniC2D  [kernel.kallsyms]     [k] file_modified_flags
+     0.22%     0.00%  miniC2D  [kernel.kallsyms]     [k] generic_update_time
+     0.22%     0.00%  miniC2D  [kernel.kallsyms]     [k] __mark_inode_dirty
+     0.22%     0.00%  miniC2D  [ext4]                [k] ext4_dirty_inode
+     0.22%     0.00%  miniC2D  [ext4]                [k] __ext4_mark_inode_dirty
+     0.22%     0.00%  miniC2D  [ext4]                [k] ext4_mark_iloc_dirty
+     0.22%     0.00%  miniC2D  [ext4]                [k] __ext4_handle_dirty_metadata
+     0.22%     0.22%  miniC2D  libc.so.6             [.] 0x0000000000098109
+     0.22%     0.22%  miniC2D  miniC2D               [.] sat_mark_clause
+     0.22%     0.00%  miniC2D  [heap]                [.] 0x0000000031024d4f
+     0.22%     0.22%  miniC2D  libc.so.6             [.] 0x0000000000096218
+     0.22%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b5218
+     0.22%     0.00%  miniC2D  anon                  [.] 0x00007fdc83211c07
+     0.22%     0.22%  miniC2D  libc.so.6             [.] 0x0000000000097615
+     0.22%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b6615
+     0.22%     0.22%  miniC2D  libc.so.6             [.] 0x000000000009615b
+     0.22%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b515b
+     0.21%     0.00%  miniC2D  [heap]                [.] 0x0000000030fd6cff
+     0.21%     0.21%  miniC2D  libc.so.6             [.] 0x0000000000096240
+     0.21%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b5240
+     0.21%     0.21%  miniC2D  libc.so.6             [.] 0x0000000000096143
+     0.21%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b5143
+     0.21%     0.21%  miniC2D  libc.so.6             [.] 0x00000000000979b8
+     0.21%     0.00%  miniC2D  miniC2D               [.] vset_duplicate
+     0.21%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b69b8
+     0.21%     0.21%  miniC2D  [kernel.kallsyms]     [k] native_set_pte
+     0.21%     0.21%  miniC2D  libc.so.6             [.] 0x000000000009618f
+     0.21%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b518f
+     0.21%     0.00%  miniC2D  miniC2D               [.] free_hdtree
+     0.21%     0.21%  miniC2D  libc.so.6             [.] 0x00000000000961bf
+     0.21%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b51bf
+     0.21%     0.21%  miniC2D  libc.so.6             [.] 0x00000000000952a0
+     0.21%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b58ff
+     0.21%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b42a0
+     0.21%     0.21%  miniC2D  libc.so.6             [.] 0x000000000009760e
+     0.21%     0.00%  miniC2D  miniC2D               [.] construct_var_map
+     0.21%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b660e
+     0.21%     0.21%  miniC2D  miniC2D               [.] sat_var2nliteral
+     0.21%     0.00%  miniC2D  miniC2D               [.] disjoin_nnfs_i
+     0.21%     0.00%  miniC2D  miniC2D               [.] new_and_node
+     0.21%     0.21%  miniC2D  libc.so.6             [.] 0x00000000000975e8
+     0.21%     0.00%  miniC2D  libc.so.6             [.] 0x00007fdc9a4b65e8
+     0.21%     0.21%  miniC2D  [kernel.kallsyms]     [k] _raw_spin_unlock
+     0.18%     0.18%  miniC2D  [kernel.kallsyms]     [k] next_uptodate_page
+     0.18%     0.00%  miniC2D  ld-linux-x86-64.so.2  [.] 0x00007fdc9a8cea49
+     0.18%     0.00%  miniC2D  ld-linux-x86-64.so.2  [.] 0x00007fdc9a8b35c9
+     0.18%     0.00%  miniC2D  ld-linux-x86-64.so.2  [.] _dl_catch_exception
+     0.18%     0.00%  miniC2D  ld-linux-x86-64.so.2  [.] 0x00007fdc9a8b3260
+     0.18%     0.00%  miniC2D  ld-linux-x86-64.so.2  [.] 0x00007fdc9a8b9074
+     0.18%     0.00%  miniC2D  ld-linux-x86-64.so.2  [.] 0x00007fdc9a8b7da9
+     0.18%     0.00%  miniC2D  [kernel.kallsyms]     [k] do_fault
+     0.18%     0.00%  miniC2D  [kernel.kallsyms]     [k] filemap_map_pages
+     0.15%     0.15%  miniC2D  [kernel.kallsyms]     [k] _raw_spin_lock_irqsave
+     0.15%     0.00%  miniC2D  ld-linux-x86-64.so.2  [.] 0x00007fdc9a8ce7a7
+     0.15%     0.00%  miniC2D  ld-linux-x86-64.so.2  [.] 0x00007fdc9a8b71ee
+     0.15%     0.00%  miniC2D  [kernel.kallsyms]     [k] count_memcg_events.constprop.0
+     0.15%     0.00%  miniC2D  [kernel.kallsyms]     [k] cgroup_rstat_updated
+     0.11%     0.11%  miniC2D  [kernel.kallsyms]     [k] map_id_up
+     0.11%     0.00%  miniC2D  [kernel.kallsyms]     [k] from_kuid_munged
+     0.08%     0.08%  miniC2D  [kernel.kallsyms]     [k] vm_area_alloc
+     0.08%     0.00%  miniC2D  [kernel.kallsyms]     [k] elf_map
+     0.08%     0.00%  miniC2D  [kernel.kallsyms]     [k] vm_mmap_pgoff
+     0.08%     0.00%  miniC2D  [kernel.kallsyms]     [k] do_mmap
+     0.08%     0.00%  miniC2D  [kernel.kallsyms]     [k] mmap_region
+     0.04%     0.04%  miniC2D  [kernel.kallsyms]     [k] vma_wants_writenotify
+     0.04%     0.00%  miniC2D  [kernel.kallsyms]     [k] setup_arg_pages
+     0.04%     0.00%  miniC2D  [kernel.kallsyms]     [k] mprotect_fixup
+     0.04%     0.00%  miniC2D  [kernel.kallsyms]     [k] vma_set_page_prot
+     0.02%     0.00%  perf-ex  [kernel.kallsyms]     [k] entry_SYSCALL_64_after_hwframe
+     0.02%     0.00%  perf-ex  [kernel.kallsyms]     [k] do_syscall_64
+     0.02%     0.00%  perf-ex  [kernel.kallsyms]     [k] __x64_sys_execve
+     0.02%     0.00%  perf-ex  [kernel.kallsyms]     [k] do_execveat_common.isra.0
+     0.02%     0.00%  perf-ex  [kernel.kallsyms]     [k] bprm_execve
+     0.02%     0.00%  perf-ex  [kernel.kallsyms]     [k] load_elf_binary
+     0.02%     0.00%  perf-ex  [kernel.kallsyms]     [k] begin_new_exec
+     0.02%     0.00%  perf-ex  [kernel.kallsyms]     [k] perf_event_exec
+     0.01%     0.01%  perf-ex  [kernel.kallsyms]     [k] select_task_rq_fair
+     0.01%     0.00%  perf-ex  [kernel.kallsyms]     [k] asm_sysvec_irq_work
+     0.01%     0.00%  perf-ex  [kernel.kallsyms]     [k] sysvec_irq_work
+     0.01%     0.00%  perf-ex  [kernel.kallsyms]     [k] __sysvec_irq_work
+     0.01%     0.00%  perf-ex  [kernel.kallsyms]     [k] irq_work_run
+     0.01%     0.00%  perf-ex  [kernel.kallsyms]     [k] irq_work_run_list
+     0.01%     0.00%  perf-ex  [kernel.kallsyms]     [k] irq_work_single
+     0.01%     0.00%  perf-ex  [kernel.kallsyms]     [k] perf_pending_irq
+     0.01%     0.00%  perf-ex  [kernel.kallsyms]     [k] perf_event_wakeup
+     0.01%     0.00%  perf-ex  [kernel.kallsyms]     [k] __wake_up_common_lock
+     0.01%     0.00%  perf-ex  [kernel.kallsyms]     [k] __wake_up_common
+     0.01%     0.00%  perf-ex  [kernel.kallsyms]     [k] pollwake
+     0.01%     0.00%  perf-ex  [kernel.kallsyms]     [k] try_to_wake_up
+     0.01%     0.00%  perf-ex  [kernel.kallsyms]     [k] native_write_msr
+     0.01%     0.00%  perf-ex  [kernel.kallsyms]     [k] __intel_pmu_enable_all.constprop.0
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] end_repeat_nmi
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] acpi_os_read_memory
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] nmi_handle
+
+
+#
+# (Tip: To set sample time separation other than 100ms with --sort time use --time-quantum)
+#
