@@ -1,11 +1,3 @@
-c satplan version 1.0
-c created: Wed Jun 12 19:19:48 EDT 1996
-c operators: bw_orig.ops
-c facts: bw_large.b.facts
-c goal: 9
-c wff: bw_large.b.cnf
-c map: bw_large.b.map
-c type: wff
 p cnf 1087 13772
 -595 -579 0
 -595 -588 0

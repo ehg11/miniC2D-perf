@@ -1,15 +1,3 @@
-c FILE:  ssa7552-038.cnf
-c
-c SOURCE: Allen Van Gelder (avg@cs.ucsd.edu) and Yumi Tsuji
-c        (tsuji@cse.ucsc.edu) 
-c
-c Nemesis formula in 6CNF in accordance with DIMACS CNF format:
-c    Filename: MCNC/c7552/c7552.tdl
-c    Formula number 38
-c    13094 variables (range: 2 - 13095)
-c    3575 clauses
-c
-c p cnf 13095 3575
 p cnf 1501 3575
 1501	0
 1080	0

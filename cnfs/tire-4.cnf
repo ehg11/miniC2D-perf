@@ -1,35 +1,6 @@
-c blackbox version 42
-c command line:  ./blackbox -o Examples/tire-world/domain.pddl -f Examples/tire-world/prob04.pddl -printcnf -printexit
 
-c Loading domain file: Examples/tire-world/domain.pddl
-c Loading fact file: Examples/tire-world/prob04.pddl
-c Problem name: fix-strips4
-c Facts loaded.
-c time: 1, 38 facts and 1 exclusive pairs.
-c time: 2, 42 facts and 9 exclusive pairs.
-c time: 3, 45 facts and 13 exclusive pairs.
-c time: 4, 45 facts and 10 exclusive pairs.
-c time: 5, 47 facts and 24 exclusive pairs.
-c time: 6, 50 facts and 38 exclusive pairs.
-c time: 7, 52 facts and 41 exclusive pairs.
-c time: 8, 52 facts and 30 exclusive pairs.
-c time: 9, 52 facts and 28 exclusive pairs.
-c time: 10, 52 facts and 28 exclusive pairs.
-c time: 11, 52 facts and 28 exclusive pairs.
-c time: 12, 52 facts and 28 exclusive pairs.
-c 1411 nodes created.
 
-c ####################################################
-c goals at time 13:
-c bbunopen_trunk c in_jack_trunk c in_pump_trunk c in_wheel1_trunk c in_wrench_trunk 
-c inflated_wheel2 c on_wheel2_the-hub c tight_nuts_the-hub 
 
-c Converting graph to wff
-c number of action variables = 488
-c number of fluent variables = 324
-c total number variables = 812
-c number clauses = 3222
-c added nodes: 2689
 p cnf 812 3222
 -1 503 0 
 -1 498 0 

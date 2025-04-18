@@ -1,0 +1,6 @@
+
+Constructing CNF... DONE
+CNF stats: 
+  Vars=51639 / Clauses=368352
+  CNF Time	0.296s
+Constructing vtree (from primal graph)...

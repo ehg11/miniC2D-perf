@@ -1,0 +1,10 @@
+
+Constructing CNF... DONE
+CNF stats: 
+  Vars=804 / Clauses=4343
+  CNF Time	0.003s
+Constructing vtree (from primal graph)... DONE
+Vtree stats:
+  Vtree widths: con<=48, c_con=939 v_con=48
+  Vtree Time	1.117s
+Saving vtree... DONE

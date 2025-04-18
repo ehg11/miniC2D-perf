@@ -5,3 +5,6 @@ perf.data.old
 *.o
 *old*/
 __pycache__/
+stack16384/*
+.vscode
+cnfs/*
